@@ -46,7 +46,6 @@ h2{
     gap: 20px;
     padding: 1rem;
     border-radius: 10px;
-    /* box-shadow: 2px 4px rgba(0,0,0,0.9),inset; */
 }
 
 .list{
@@ -70,4 +69,17 @@ h2{
     scale: 1.05;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     background-color: rgb(231, 231, 231);
+}
+
+@media  (max-width:650px){
+    .board{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .card{
+        margin-top: 2rem;
+        min-width: 50%; 
+    }
+    
 }
