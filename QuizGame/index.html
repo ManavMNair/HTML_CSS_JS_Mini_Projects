@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Screen 1 -->
+        <div class="screen active" id="initial-screen">
+            <h1>Quiz Game</h1>
+            <p>Welcome to the Game . Press the Start button.</p>
+            <button id="start-btn">Start Quiz</button>
+
+        </div>
+        <!-- Screen 2 -->
+        <div class="screen " id="quiz-screen">
+            <h2 id="question-text"> </h2>
+            <div class="quiz-info">
+                <p>Question <span id="question-number">1</span> of <span id="total-question">5</span></p>
+                <p>Score : <span id="score">0</span></p>
+            </div>
+            <div class="option-section" id="option-section">
+                <!-- <button class="options-btn" id="options-btn">Option 1</button>
+                <button class="options-btn " id="options-btn">Option 2</button>
+                <button class="options-btn " id="options-btn">Option 3</button>
+                <button class="options-btn" id="options-btn">Option 4</button> -->
+
+
+            </div>
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progress-bar-fill">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 3 -->
+
+        <div class="screen " id="result-screen">
+            <h1>Quiz Results</h1>
+            <div class="result">
+                <p>You have scored <span id="final-score"></span> out of <span id="total-questions"></span></p>
+                <h2 id="result-message"></h2>
+            </div>
+            
+            <button id="restart-btn">
+                Restart Quiz
+            </button>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
